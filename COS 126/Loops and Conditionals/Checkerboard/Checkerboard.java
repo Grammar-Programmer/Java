@@ -1,4 +1,13 @@
-
+/* . Create N x N Chess Board
+ * .
+ * . % java Checkerboard 4             % java Checkerboard 5
+ * .	* * * *                           * * * * * 
+ * .	 * * * *                           * * * * *
+ * .	* * * *                           * * * * * 
+ * .	 * * * *                           * * * * *
+ * .	                                 * * * * * 
+ * .
+ * */
 public class Checkerboard {
 
 	public static String getStringFormated(int numberPerLine, int numberPerColumn, String simbol, String separator) {
