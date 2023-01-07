@@ -1,3 +1,15 @@
+/* Verify if an array is Ordered(normal and inverse)
+ * 
+ * % java Ordered 10 17 49
+ * true
+ * 
+ * % java Ordered 49 17 10
+ * true
+ * 
+ * % java Ordered 10 49 17
+ * false
+ * 
+ */
 public class Ordered {
 
 	// Requirements: Wanted Order: compare(...) returns <= 0
