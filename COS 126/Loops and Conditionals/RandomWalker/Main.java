@@ -6,7 +6,7 @@ package RandomWalker;
  * Shows Graph: x = point
  * 				- = line where y = 0
  * 
- * % java RandomWalker 10            % java RandomWalker 20
+ * % java Main 10            % java Main 20
  * Number of Steps: 10				 Number of Steps: 20
  * Trajectory Points:				 Trajectory Points:
  * (0, -1)                           (0, 1)
