@@ -28,7 +28,10 @@ public class Term implements Comparable<Term> {
 
 		return (t1, t2) -> {
 			int lim = Math.min(Math.min(r, t1.query.length()), t2.query.length());
-			return t1.query.substring(0, lim).compareTo(t2.query.substring(0, lim));
+			int result = t1.query.substring(0, lim).compareTo(t2.query.substring(0, lim));
+			if (result != 0)
+				return result;
+			return  t1.query.length() - t2.query.length();
 		};
 	}
 
@@ -46,7 +49,7 @@ public class Term implements Comparable<Term> {
 
 	// unit testing (required)
 	public static void main(String[] args) {
-		long weight = 1;
+		long weight = 111;
 		String query = "Testing";
 		Term t1 = new Term(query, weight);
 		Term t2 = new Term("CowBoy", 19);
