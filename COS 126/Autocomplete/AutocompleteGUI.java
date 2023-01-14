@@ -580,8 +580,8 @@ public class AutocompleteGUI extends JFrame {
                        results[i] = "<html><table width=\""
                                + searchText.getPreferredSize().width + "\">"
                                + "<tr><td align=left>"
-                               + query.substring(0, textLen + 1)
-                               + "<b>" + query.substring(textLen + 1) + "</b>";
+                               + query.substring(0, Math.min(textLen + 1,query.length()))
+                               + "<b>" + query.substring(Math.min(textLen + 1,query.length())) + "</b>";
                        if (displayWeights) {
                            String weight = next.substring(0, tab).trim();
                            results[i] += "<td width=\"10%\" align=right>"
